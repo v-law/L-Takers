@@ -1,4 +1,4 @@
-# L-Takers
+# L-Takers (Kristin Lin, Vernita Lawren, Dimitriy Leksanov)
 
 ###ALGORITHM:
 #####  Continuously splits deck in half until each deck consists of one card. Cards
