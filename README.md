@@ -16,3 +16,4 @@
 ######  NOTE: the first run is removed from the ArrayList, as it is always outlandishly high for 1-integer arrays, and skews the data.
 
 [Our Graphs](https://docs.google.com/document/d/14MuSRdndcZ1oe-_SM822p6mXctroy68qXvAVdcwHIlI/pub)
+[Our Graphs]
