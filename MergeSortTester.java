@@ -18,12 +18,12 @@
   O(nlog(n))
 
   Mean execution times for dataset of size n:
-  Batch size: <# of times each dataset size was run>
-  n=1       time: 
-  n=10      time: 
-  n=100     time: 
+  Batch size: 25
+  n=1       time: 918
+  n=10      time: 16443
+  n=100     time: 41852
   ...
-  n=<huge>  time: 
+  n=2500  time: 568306
 
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
@@ -40,12 +40,6 @@ public class MergeSortTester {
 	}
 	return deck;
     }
-
-    /*
-public static void runSort(int[] deck){
-MergeSort.sort(deck);
-}
-    */
 
     //finds mean of execution times
     public static long avgTime(ArrayList<Long> data) {
