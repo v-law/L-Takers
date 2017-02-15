@@ -1,4 +1,3 @@
-
 //Team L-Takers
 //Kristin Lin, Vernita Lawren, Dimitriy Leksanov
 //APCS2 pd1
@@ -68,7 +67,7 @@ MergeSort.sort(deck);
     public static void main( String[] args ) {
 
 	//testing arrays with 1 integer
-	ArrayList<Long> timeData1 = new ArrayList();
+	ArrayList<Long> timeData1 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(1));
@@ -79,7 +78,7 @@ MergeSort.sort(deck);
 
 
 	//testing arrays with 10 integers
-	ArrayList<Long> timeData10 = new ArrayList();
+	ArrayList<Long> timeData10 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(10));
@@ -89,7 +88,7 @@ MergeSort.sort(deck);
 	System.out.println("Mean execution times for dataset of size 10: " + avgTime(timeData10));
 
 	//testing arrays with 100 integers
-	ArrayList<Long> timeData100 = new ArrayList();
+	ArrayList<Long> timeData100 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(100));
@@ -99,7 +98,7 @@ MergeSort.sort(deck);
 	System.out.println("Mean execution times for dataset of size 100: " + avgTime(timeData100));
 
 	//testing arrays with 1000 integers
-	ArrayList<Long> timeData1000 = new ArrayList();
+	ArrayList<Long> timeData1000 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(1000));
@@ -109,7 +108,7 @@ MergeSort.sort(deck);
 	System.out.println("Mean execution times for dataset of size 1000: " + avgTime(timeData1000));
 
 	//testing arrays with 2500 integers
-	ArrayList<Long> timeData2500 = new ArrayList();
+	ArrayList<Long> timeData2500 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(2500));
