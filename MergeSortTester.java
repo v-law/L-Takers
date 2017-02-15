@@ -15,18 +15,27 @@
   process features a binary tree being created then collapsing.
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  O(nlog(n))
+  O(nlogn)
 
   Mean execution times for dataset of size n:
   Batch size: 25
   n=1       time: 918
   n=10      time: 16443
-  n=100     time: 41852
+  n=100     time: 43077
+  n=1000    time: 360367
   ...
-  n=2500  time: 568306
+  n=2500  time: 568237
 
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  According to the data, the big-Oh classification of MergeSort should be O(n)
+  or O(nlogn), but definitely not O(n^2) or O(logn). When the runtimes were
+  graphed and compared to F(n)=c*n^2, G(n)=c*n, H(n)=c*nlogn, and M(n)=c*logn, 
+  the graph showed that MergeSort is the Big Oh of n. However, because our data
+  could be faulty and our understanding of MergeSort, we are inclined to 
+  conclude that MergeSort is actually the Big Oh of nlogn, which is not too much
+  of a stretch, for the graph of H(n)=c*nlogn is still close to the graph of 
+  MergeSort.
+  
   ======================================*/
 
 import java.util.ArrayList;
