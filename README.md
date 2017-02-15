@@ -16,8 +16,7 @@ is run 25 times, and the runtime of each run is printed. Runtimes are calculated
 through getting the difference in nanoTime between the beginning and end of each run.
 As well, each runtime is recorded in an ArrayList, specified for each array length.
 That is later used to calculate the average runtime of all the runs.
-######  NOTE: the first run is removed from the ArrayList, as it is always 
-######  outlandishly high for 1-integer arrays, and skews the data.
+######  NOTE: the first run is removed from the ArrayList, as it is always outlandishly high for 1-integer arrays, and skews the data.
 
 ###FINDINGS: 
 MergeSort is O(nlogn).
