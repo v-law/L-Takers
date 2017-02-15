@@ -15,4 +15,4 @@
 #####  That is later used to calculate the average runtime of all the runs.
 ######  NOTE: the first run is removed from the ArrayList, as it is always outlandishly high for 1-integer arrays, and skews the data.
 
-(https://docs.google.com/document/d/1wIJXsaQ4wn_kGQjuXBwVBvSov1giM5r_neP6kGksXmI/pub "Our Document, featuring code and information")
+[Our Document, featuring code and information][https://docs.google.com/document/d/1wIJXsaQ4wn_kGQjuXBwVBvSov1giM5r_neP6kGksXmI/pub]
