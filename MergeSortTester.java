@@ -19,12 +19,13 @@
 
   Mean execution times for dataset of size n:
   Batch size: 25
-  n=1       time: 918
-  n=10      time: 16443
-  n=100     time: 43077
-  n=1000    time: 360367
-  ...
-  n=2500  time: 568237
+  n=1          time: 918
+  n=10         time: 16443
+  n=100        time: 43077
+  n=1000       time: 360367
+  n=10000      time: 
+  n=100000     time: 
+  n=1000000    time:
 
   ANALYSIS:
   According to the data, the big-Oh classification of MergeSort should be O(n)
@@ -109,16 +110,36 @@ public class MergeSortTester {
 	    timeData1000.add(execTime);
 	}
 	System.out.println("Mean execution times for dataset of size 1000: " + avgTime(timeData1000));
-
-	//testing arrays with 2500 integers
-	ArrayList<Long> timeData2500 = new ArrayList<Long>();
+	
+	//testing arrays with 10000 integers
+	ArrayList<Long> timeData10000 = new ArrayList<Long>();
 	for (int x = 0; x < 25; x++) {
 	    long execTime = System.nanoTime();
-	    MergeSort.sort(crtDeck(2500));
+	    MergeSort.sort(crtDeck(10000));
 	    execTime = (System.nanoTime()) - execTime;
-	    timeData2500.add(execTime);
+	    timeData10000.add(execTime);
 	}
-	System.out.println("Mean execution times for dataset of size 2500: " + avgTime(timeData2500));
+	System.out.println("Mean execution times for dataset of size 10000: " + avgTime(timeData10000));
+	    
+    	//testing arrays with 100000 integers
+	ArrayList<Long> timeData100000 = new ArrayList<Long>();
+	for (int x = 0; x < 25; x++) {
+	    long execTime = System.nanoTime();
+	    MergeSort.sort(crtDeck(100000));
+	    execTime = (System.nanoTime()) - execTime;
+	    timeData100000.add(execTime);
+	}
+	System.out.println("Mean execution times for dataset of size 100000: " + avgTime(timeData100000));
+	    
+    	//testing arrays with 1000000 integers
+	ArrayList<Long> timeData1000000 = new ArrayList<Long>();
+	for (int x = 0; x < 25; x++) {
+	    long execTime = System.nanoTime();
+	    MergeSort.sort(crtDeck(1000000));
+	    execTime = (System.nanoTime()) - execTime;
+	    timeData1000000.add(execTime);
+	}
+	System.out.println("Mean execution times for dataset of size 1000000: " + avgTime(timeData1000000));
 
     }//end Main
 }//end class
