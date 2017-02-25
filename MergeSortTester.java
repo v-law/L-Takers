@@ -33,7 +33,7 @@
   passed through the point (10 000, 2.072*10^6). While the graph clearly did
   not have an exponential curve or a logarithmic curve, the shape was very 
   similar to a nlog(n) or a n function. However, as the data sets increased, 
-  it was clear that the data was O(nlogn) rather than O(n) for our values were
+  it was clear that the data was O(nlogn) rather than O(n), for our values were
   greater than the values in the n function (see graphs linked in readme). This
   corresponds with our original hypothesis that MergeSort would be O(nlogn)
   because while splitting the deck into half is log(n) and merging is 2n, the
