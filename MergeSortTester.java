@@ -25,7 +25,7 @@
   n=1000       time: 238480
   n=10000      time: 2071980
   n=100000     time: 23271027
-  n=1000000    time: 
+  n=1000000    time: 229070781
 
   ANALYSIS:
   According to the data, the big-Oh classification of MergeSort should be O(n)
