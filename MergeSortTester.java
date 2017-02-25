@@ -28,14 +28,16 @@
   n=1000000    time: 229070781
 
   ANALYSIS:
-  According to the data, the big-Oh classification of MergeSort should be O(n)
-  or O(nlogn), but definitely not O(n^2) or O(logn). When the runtimes were
-  graphed and compared to F(n)=c*n^2, G(n)=c*n, H(n)=c*nlogn, and M(n)=c*logn, 
-  the graph showed that MergeSort is the Big Oh of n. However, because our data
-  could be faulty and our understanding of MergeSort, we are inclined to 
-  conclude that MergeSort is actually the Big Oh of nlogn, which is not too much
-  of a stretch, for the graph of H(n)=c*nlogn is still close to the graph of 
-  MergeSort.
+  After running tests with data sets of size n = 1 to 1 000 000, the data was
+  graphed and compared to O(n^2), O(nlogn), O(n), and O(logn) so that they 
+  passed through the point (10 000, 2.072*10^6). While the graph clearly did
+  not have an exponential curve or a logarithmic curve, the shape was very 
+  similar to a nlog(n) or a n function. However, as the data sets increased, 
+  it was clear that the data was O(nlogn) rather than O(n) for our values were
+  greater than the values in the n function (see graphs linked in readme). This
+  corresponds with our original hypothesis that MergeSort would be O(nlogn)
+  because while splitting the deck into half is log(n) and merging is 2n, the
+  two processes combined has runtime classification of O(nlogn).
   
   ======================================*/
 
@@ -54,7 +56,7 @@ public class MergeSortTester {
     //finds mean of execution times
     public static long avgTime(ArrayList<Long> data) {
 	long total = 0;
-	data.remove(0); //for some reason, the first element is outlandishly big
+	data.remove(0); //system needs to "warm up" 
 	for (long x : data) {
 	    System.out.println(x);
 	    total += x;
