@@ -19,13 +19,13 @@
 
   Mean execution times for dataset of size n:
   Batch size: 10000
-  n=1          time: 918
-  n=10         time: 16443
-  n=100        time: 43077
-  n=1000       time: 360367
-  n=10000      time: 
-  n=100000     time: 
-  n=1000000    time:
+  n=1          time: 481
+  n=10         time: 2656
+  n=100        time: 17163
+  n=1000       time: 238480
+  n=10000      time: 2071980
+  n=100000     time: 23271027
+  n=1000000    time: 
 
   ANALYSIS:
   According to the data, the big-Oh classification of MergeSort should be O(n)
