@@ -18,7 +18,7 @@
   O(nlogn)
 
   Mean execution times for dataset of size n:
-  Batch size: 25
+  Batch size: 10000
   n=1          time: 918
   n=10         time: 16443
   n=100        time: 43077
@@ -72,7 +72,7 @@ public class MergeSortTester {
 
 	//testing arrays with 1 integer
 	ArrayList<Long> timeData1 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(1));
 	    execTime = (System.nanoTime()) - execTime;
@@ -83,7 +83,7 @@ public class MergeSortTester {
 
 	//testing arrays with 10 integers
 	ArrayList<Long> timeData10 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(10));
 	    execTime = (System.nanoTime()) - execTime;
@@ -93,7 +93,7 @@ public class MergeSortTester {
 
 	//testing arrays with 100 integers
 	ArrayList<Long> timeData100 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(100));
 	    execTime = (System.nanoTime()) - execTime;
@@ -103,7 +103,7 @@ public class MergeSortTester {
 
 	//testing arrays with 1000 integers
 	ArrayList<Long> timeData1000 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(1000));
 	    execTime = (System.nanoTime()) - execTime;
@@ -113,7 +113,7 @@ public class MergeSortTester {
 	
 	//testing arrays with 10000 integers
 	ArrayList<Long> timeData10000 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(10000));
 	    execTime = (System.nanoTime()) - execTime;
@@ -123,7 +123,7 @@ public class MergeSortTester {
 	    
     	//testing arrays with 100000 integers
 	ArrayList<Long> timeData100000 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(100000));
 	    execTime = (System.nanoTime()) - execTime;
@@ -133,7 +133,7 @@ public class MergeSortTester {
 	    
     	//testing arrays with 1000000 integers
 	ArrayList<Long> timeData1000000 = new ArrayList<Long>();
-	for (int x = 0; x < 25; x++) {
+	for (int x = 0; x < 10000; x++) {
 	    long execTime = System.nanoTime();
 	    MergeSort.sort(crtDeck(1000000));
 	    execTime = (System.nanoTime()) - execTime;
